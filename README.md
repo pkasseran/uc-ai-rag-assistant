@@ -37,8 +37,15 @@ cp .env.example .env
 ```bash
 # 1. Scrape and process documents (one-time setup)
 cd code/document_scraping
-python webdoc_scraper.py uc_ai_scrap_config.yml
-python convert_to_RAG_ready_groups.py uc_ai_scrap_config.yml
+./scrap_n_group.sh # Linux/Mac
+#or
+scrap_n_group.bat # Windows
+
+# OR you can manually execute each python scripts as below
+python webdoc_scraper.py uc_ai_scrap_config.yaml
+python convert_to_RAG_ready_groups.py uc_ai_scrap_config.yaml
+
+
 
 # 2. Build vector store
 cd ..

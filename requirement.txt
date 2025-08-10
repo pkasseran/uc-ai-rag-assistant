@@ -26,7 +26,7 @@ python-dotenv>=1.0.0
 PyYAML>=6.0
 
 # Database
-sqlite3  # Built into Python
+# sqlite3  # Built into Python
 
 # Utilities
 python-dateutil>=2.8.0
