@@ -186,8 +186,9 @@ ai_assistant_system_prompt:
 
 **Vector store not found**
 ```bash
+cd code
 # Rebuild the vector store
-python code/build_vector_store.py
+python build_vector_store.py
 ```
 
 **Authentication issues**
@@ -195,7 +196,7 @@ python code/build_vector_store.py
 # Check database permissions
 ls -la database/
 # Recreate database if needed
-rm database/chat_history.db
+rm database/chat_app.db
 ```
 
 **Scraping failures**
