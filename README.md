@@ -56,6 +56,9 @@ python build_vector_store.py
 # or
 run_streamlite.bat     # Windows
 ```
+### Streamlite first time login 
+
+At the login screen, click on the Register tab and enter your details to register as a user. Then go back to the login screen to login with your username and password.
 
 ## 🏗️ Architecture
 
@@ -214,13 +217,17 @@ rm database/chat_history.db
 - Multi-level validation ensures data quality
 - Deduplication prevents redundant information
 
-## 🤝 Contributing
+## Contributing
 
 This system is designed for enterprise adoption with:
 - **Modular architecture** for easy extension
 - **Comprehensive documentation** 
 - **Configuration-driven customization**
 - **Production-ready deployment** options
+
+If you want to contribute, please fork this repository and submit a pull request
+
+Contact: pkasseran@gmail.com
 
 ## 📄 License
 
