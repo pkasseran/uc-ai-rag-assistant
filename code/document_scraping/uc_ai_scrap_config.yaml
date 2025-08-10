@@ -1,0 +1,46 @@
+# Web scraping configuration
+
+# List of URLs to scrape
+urls:
+  - 'https://docs.unitycatalog.io/ai/quickstart/'
+  - 'https://docs.unitycatalog.io/ai/usage/'
+  - 'https://docs.unitycatalog.io/ai/client/'
+  - 'https://docs.unitycatalog.io/ai/integrations/'
+  - 'https://docs.unitycatalog.io/ai/integrations/langchain/'
+  - 'https://docs.unitycatalog.io/ai/integrations/llamaindex/'
+  - 'https://docs.unitycatalog.io/ai/integrations/openai/'
+  - 'https://docs.unitycatalog.io/ai/integrations/anthropic/'
+  - 'https://docs.unitycatalog.io/ai/integrations/crewai/'
+  - 'https://docs.unitycatalog.io/ai/integrations/autogen/'
+  - 'https://docs.unitycatalog.io/ai/integrations/litellm/'
+  - 'https://docs.unitycatalog.io/ai/integrations/gemini/'
+
+# Output raw file name configuration
+output_raw_file: "unitycatalog_ai_raw_docs.json"
+
+# RAG Ready grouped file name configuration
+output_rag_grouping_file: "unitycatalog_ai_grouped_docs.json"
+
+# HTML tags to extract
+tags:
+  - "h1"
+  - "h2"
+  - "h3"
+  - "h4"
+  - "p"
+  - "pre"
+  - "li"
+  - "ul"
+
+# URL processing configuration
+url_processing:
+  resolve_relative_urls: true  # Convert relative URLs to absolute
+  preserve_fragments: true     # Keep URL fragments like #section
+  log_url_changes: false       # Log when URLs are converted (for debugging)
+
+# Request configuration
+request_config:
+  timeout: 30
+  headers:
+    User-Agent: "Mozilla/5.0 (compatible; DocScraper/1.0)"
+    

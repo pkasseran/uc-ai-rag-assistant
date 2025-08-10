@@ -1,0 +1,54 @@
+# Core web framework
+streamlit>=1.28.0
+
+# LangChain ecosystem
+langchain>=0.1.0
+langchain-community>=0.0.20
+langchain-core>=0.1.0
+langchain-openai>=0.0.5
+
+# OpenAI
+openai>=1.0.0
+
+# Vector store and embeddings
+faiss-cpu>=1.7.4
+
+# Web scraping
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+
+# Data processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Configuration and environment
+python-dotenv>=1.0.0
+PyYAML>=6.0
+
+# Database
+sqlite3  # Built into Python
+
+# Utilities
+python-dateutil>=2.8.0
+urllib3>=2.0.0
+
+# Optional: For better HTML parsing
+lxml>=4.9.0
+html5lib>=1.1
+
+# Development and testing (optional)
+pytest>=7.0.0
+black>=23.0.0
+flake8>=6.0.0
+
+# Logging (built into Python, but useful extensions)
+colorlog>=6.7.0
+
+# For handling markdown
+markdown>=3.4.0
+
+# JSON handling (built into Python)
+# os, sys, re, json, logging are built-in modules
+
+# For text processing and regex
+regex>=2023.0.0

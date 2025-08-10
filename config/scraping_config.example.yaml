@@ -1,0 +1,40 @@
+# Web scraping configuration
+
+# List of URLs to scrape
+urls:
+  - 'https://docs.unitycatalog.io/ai/quickstart/'
+  - 'https://docs.unitycatalog.io/ai/usage/'
+  - 'https://docs.unitycatalog.io/ai/client/'
+  - 'https://docs.unitycatalog.io/ai/integrations/'
+  - 'https://docs.unitycatalog.io/ai/integrations/langchain/'
+  - 'https://docs.unitycatalog.io/ai/integrations/llamaindex/'
+  - 'https://docs.unitycatalog.io/ai/integrations/openai/'
+  - 'https://docs.unitycatalog.io/ai/integrations/anthropic/'
+  - 'https://docs.unitycatalog.io/ai/integrations/crewai/'
+  - 'https://docs.unitycatalog.io/ai/integrations/autogen/'
+  - 'https://docs.unitycatalog.io/ai/integrations/litellm/'
+  - 'https://docs.unitycatalog.io/ai/integrations/gemini/'
+
+# Output file configuration
+output_file: "unitycatalog_ai_docs.json"
+
+# RAG Chunking file configuration
+rag_chunking_file: "unitycatalog_ai_docs_chunks.json"
+
+# HTML tags to extract
+tags:
+  - "h1"
+  - "h2"
+  - "h3"
+  - "h4"
+  - "p"
+  - "pre"
+  - "li"
+  - "ul"
+
+# Optional: Request configuration
+request_config:
+  timeout: 30
+  headers:
+    User-Agent: "Mozilla/5.0 (compatible; DocScraper/1.0)"
+    

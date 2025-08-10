@@ -1,0 +1,230 @@
+2025-08-09 12:53:24,620 - __main__ - INFO - Logging initialized
+2025-08-09 12:53:24,620 - __main__ - INFO - Initializing RAG Assistant UI components...
+2025-08-09 12:53:24,621 - __main__ - INFO - All components initialized successfully
+2025-08-09 12:53:24,621 - __main__ - INFO - Starting RAG Assistant UI application
+2025-08-09 12:53:24,621 - __main__ - INFO - User not authenticated, showing login page
+2025-08-09 12:53:31,480 - __main__ - INFO - Logging initialized
+2025-08-09 12:53:31,480 - __main__ - INFO - Initializing RAG Assistant UI components...
+2025-08-09 12:53:31,481 - __main__ - INFO - All components initialized successfully
+2025-08-09 12:53:31,481 - __main__ - INFO - Starting RAG Assistant UI application
+2025-08-09 12:53:31,482 - __main__ - INFO - User not authenticated, showing login page
+2025-08-09 12:53:31,532 - __main__ - INFO - Logging initialized
+2025-08-09 12:53:31,532 - __main__ - INFO - Initializing RAG Assistant UI components...
+2025-08-09 12:53:31,533 - __main__ - INFO - All components initialized successfully
+2025-08-09 12:53:31,533 - __main__ - INFO - Starting RAG Assistant UI application
+2025-08-09 12:53:31,533 - __main__ - INFO - Setting up Streamlit page configuration
+2025-08-09 12:53:31,534 - __main__ - INFO - Authenticated user pk (ID: 1) accessing application
+2025-08-09 12:53:31,534 - __main__ - INFO - Loading chat history for user_id: 1
+2025-08-09 12:53:31,535 - __main__ - INFO - Loaded 14 messages from chat history for user 1
+2025-08-09 12:53:31,632 - faiss.loader - INFO - Loading faiss.
+2025-08-09 12:53:31,640 - faiss.loader - INFO - Successfully loaded faiss.
+2025-08-09 12:53:31,642 - faiss - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-08-09 12:53:31,652 - __main__ - INFO - Initializing conversation memory for user_id: 1
+2025-08-09 12:53:31,652 - __main__ - INFO - Initialized memory with 14 messages for user 1
+2025-08-09 12:53:31,652 - __main__ - INFO - Building conversational retrieval chain
+2025-08-09 12:53:31,652 - __main__ - INFO - Conversational chain built successfully
+2025-08-09 12:54:23,544 - __main__ - INFO - Logging initialized
+2025-08-09 12:54:23,544 - __main__ - INFO - Initializing RAG Assistant UI components...
+2025-08-09 12:54:23,545 - __main__ - INFO - All components initialized successfully
+2025-08-09 12:54:23,545 - __main__ - INFO - Starting RAG Assistant UI application
+2025-08-09 12:54:23,545 - __main__ - INFO - Setting up Streamlit page configuration
+2025-08-09 12:54:23,547 - __main__ - INFO - Authenticated user pk (ID: 1) accessing application
+2025-08-09 12:54:23,547 - __main__ - INFO - Building conversational retrieval chain
+2025-08-09 12:54:23,548 - __main__ - INFO - Conversational chain built successfully
+2025-08-09 12:54:23,552 - __main__ - INFO - Processing query from user 1: What is this document about?...
+2025-08-09 12:54:26,269 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-09 12:54:27,405 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-09 12:54:33,754 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-09 12:54:35,394 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-09 12:54:35,397 - __main__ - INFO - Generated response in 11.84s with 8 sources
+2025-08-09 14:48:57,416 - __main__ - INFO - Logging initialized
+2025-08-09 14:48:57,416 - __main__ - INFO - Initializing RAG Assistant UI components...
+2025-08-09 14:48:57,416 - __main__ - INFO - All components initialized successfully
+2025-08-09 14:48:57,416 - __main__ - INFO - Starting RAG Assistant UI application
+2025-08-09 14:48:57,416 - __main__ - INFO - User not authenticated, showing login page
+2025-08-09 14:49:01,926 - __main__ - INFO - Logging initialized
+2025-08-09 14:49:01,926 - __main__ - INFO - Initializing RAG Assistant UI components...
+2025-08-09 14:49:01,927 - __main__ - INFO - All components initialized successfully
+2025-08-09 14:49:01,927 - __main__ - INFO - Starting RAG Assistant UI application
+2025-08-09 14:49:01,928 - __main__ - INFO - User not authenticated, showing login page
+2025-08-09 14:49:01,967 - __main__ - INFO - Logging initialized
+2025-08-09 14:49:01,967 - __main__ - INFO - Initializing RAG Assistant UI components...
+2025-08-09 14:49:01,968 - __main__ - INFO - All components initialized successfully
+2025-08-09 14:49:01,968 - __main__ - INFO - Starting RAG Assistant UI application
+2025-08-09 14:49:01,968 - __main__ - INFO - Setting up Streamlit page configuration
+2025-08-09 14:49:01,969 - __main__ - INFO - Authenticated user pk (ID: 1) accessing application
+2025-08-09 14:49:01,969 - __main__ - INFO - Loading chat history for user_id: 1
+2025-08-09 14:49:01,970 - __main__ - INFO - Loaded 16 messages from chat history for user 1
+2025-08-09 14:49:02,069 - faiss.loader - INFO - Loading faiss.
+2025-08-09 14:49:02,078 - faiss.loader - INFO - Successfully loaded faiss.
+2025-08-09 14:49:02,080 - faiss - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-08-09 14:49:02,091 - __main__ - INFO - Initializing conversation memory for user_id: 1
+2025-08-09 14:49:02,091 - __main__ - INFO - Initialized memory with 16 messages for user 1
+2025-08-09 14:49:02,091 - __main__ - INFO - Building conversational retrieval chain
+2025-08-09 14:49:02,091 - __main__ - INFO - Conversational chain built successfully
+2025-08-09 14:49:04,694 - __main__ - INFO - Logging initialized
+2025-08-09 14:49:04,694 - __main__ - INFO - Initializing RAG Assistant UI components...
+2025-08-09 14:49:04,695 - __main__ - INFO - All components initialized successfully
+2025-08-09 14:49:04,695 - __main__ - INFO - Starting RAG Assistant UI application
+2025-08-09 14:49:04,696 - __main__ - INFO - Setting up Streamlit page configuration
+2025-08-09 14:49:04,703 - __main__ - INFO - Authenticated user pk (ID: 1) accessing application
+2025-08-09 14:49:04,704 - __main__ - INFO - Building conversational retrieval chain
+2025-08-09 14:49:04,704 - __main__ - INFO - Conversational chain built successfully
+2025-08-09 14:49:04,710 - __main__ - INFO - Clearing chat history for user 1
+2025-08-09 14:49:04,717 - __main__ - INFO - Successfully cleared chat history for user 1
+2025-08-09 14:49:04,762 - __main__ - INFO - Logging initialized
+2025-08-09 14:49:04,762 - __main__ - INFO - Initializing RAG Assistant UI components...
+2025-08-09 14:49:04,763 - __main__ - INFO - All components initialized successfully
+2025-08-09 14:49:04,763 - __main__ - INFO - Starting RAG Assistant UI application
+2025-08-09 14:49:04,763 - __main__ - INFO - Setting up Streamlit page configuration
+2025-08-09 14:49:04,764 - __main__ - INFO - Authenticated user pk (ID: 1) accessing application
+2025-08-09 14:49:04,764 - __main__ - INFO - Building conversational retrieval chain
+2025-08-09 14:49:04,764 - __main__ - INFO - Conversational chain built successfully
+2025-08-09 14:49:31,910 - __main__ - INFO - Logging initialized
+2025-08-09 14:49:31,910 - __main__ - INFO - Initializing RAG Assistant UI components...
+2025-08-09 14:49:31,911 - __main__ - INFO - All components initialized successfully
+2025-08-09 14:49:31,911 - __main__ - INFO - Starting RAG Assistant UI application
+2025-08-09 14:49:31,911 - __main__ - INFO - Setting up Streamlit page configuration
+2025-08-09 14:49:31,913 - __main__ - INFO - Authenticated user pk (ID: 1) accessing application
+2025-08-09 14:49:31,913 - __main__ - INFO - Building conversational retrieval chain
+2025-08-09 14:49:31,913 - __main__ - INFO - Conversational chain built successfully
+2025-08-09 14:49:31,914 - __main__ - INFO - Processing query from user 1: what is the colour of the ovean...
+2025-08-09 14:49:32,917 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-09 14:49:34,348 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-09 14:49:34,489 - __main__ - INFO - Generated response in 2.57s with 8 sources
+2025-08-09 14:49:53,750 - __main__ - INFO - Logging initialized
+2025-08-09 14:49:53,750 - __main__ - INFO - Initializing RAG Assistant UI components...
+2025-08-09 14:49:53,751 - __main__ - INFO - All components initialized successfully
+2025-08-09 14:49:53,751 - __main__ - INFO - Starting RAG Assistant UI application
+2025-08-09 14:49:53,751 - __main__ - INFO - Setting up Streamlit page configuration
+2025-08-09 14:49:53,753 - __main__ - INFO - Authenticated user pk (ID: 1) accessing application
+2025-08-09 14:49:53,753 - __main__ - INFO - Building conversational retrieval chain
+2025-08-09 14:49:53,754 - __main__ - INFO - Conversational chain built successfully
+2025-08-09 14:49:53,757 - __main__ - INFO - Processing query from user 1: \what is unity catalog ai...
+2025-08-09 14:49:54,622 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-09 14:49:55,238 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-09 14:49:56,568 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-09 14:49:56,572 - __main__ - INFO - Generated response in 2.81s with 8 sources
+2025-08-09 14:50:09,353 - __main__ - INFO - Logging initialized
+2025-08-09 14:50:09,353 - __main__ - INFO - Initializing RAG Assistant UI components...
+2025-08-09 14:50:09,354 - __main__ - INFO - All components initialized successfully
+2025-08-09 14:50:09,354 - __main__ - INFO - Starting RAG Assistant UI application
+2025-08-09 14:50:09,354 - __main__ - INFO - Setting up Streamlit page configuration
+2025-08-09 14:50:09,356 - __main__ - INFO - Authenticated user pk (ID: 1) accessing application
+2025-08-09 14:50:09,357 - __main__ - INFO - Building conversational retrieval chain
+2025-08-09 14:50:09,359 - __main__ - INFO - Conversational chain built successfully
+2025-08-09 14:50:09,363 - __main__ - INFO - Processing query from user 1: how do I use it...
+2025-08-09 14:50:11,128 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-09 14:50:11,828 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-09 14:50:14,912 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-09 14:50:14,916 - __main__ - INFO - Generated response in 5.55s with 8 sources
+2025-08-09 14:50:38,543 - __main__ - INFO - Logging initialized
+2025-08-09 14:50:38,543 - __main__ - INFO - Initializing RAG Assistant UI components...
+2025-08-09 14:50:38,544 - __main__ - INFO - All components initialized successfully
+2025-08-09 14:50:38,544 - __main__ - INFO - Starting RAG Assistant UI application
+2025-08-09 14:50:38,544 - __main__ - INFO - Setting up Streamlit page configuration
+2025-08-09 14:50:38,546 - __main__ - INFO - Authenticated user pk (ID: 1) accessing application
+2025-08-09 14:50:38,547 - __main__ - INFO - Building conversational retrieval chain
+2025-08-09 14:50:38,547 - __main__ - INFO - Conversational chain built successfully
+2025-08-09 14:50:38,552 - __main__ - INFO - Processing query from user 1: can you explain it in simpler terms for kids...
+2025-08-09 14:50:39,954 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-09 14:50:40,348 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-09 14:50:42,242 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-09 14:50:42,245 - __main__ - INFO - Generated response in 3.69s with 8 sources
+2025-08-09 14:51:09,723 - __main__ - INFO - Logging initialized
+2025-08-09 14:51:09,724 - __main__ - INFO - Initializing RAG Assistant UI components...
+2025-08-09 14:51:09,725 - __main__ - INFO - All components initialized successfully
+2025-08-09 14:51:09,725 - __main__ - INFO - Starting RAG Assistant UI application
+2025-08-09 14:51:09,725 - __main__ - INFO - Setting up Streamlit page configuration
+2025-08-09 14:51:09,727 - __main__ - INFO - Authenticated user pk (ID: 1) accessing application
+2025-08-09 14:51:09,727 - __main__ - INFO - Building conversational retrieval chain
+2025-08-09 14:51:09,728 - __main__ - INFO - Conversational chain built successfully
+2025-08-09 14:51:09,732 - __main__ - INFO - Processing query from user 1: what does prerequisites mean...
+2025-08-09 14:51:10,362 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-09 14:51:11,016 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-09 14:51:12,054 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-09 14:51:12,058 - __main__ - INFO - Generated response in 2.32s with 8 sources
+2025-08-09 14:51:28,363 - __main__ - INFO - Logging initialized
+2025-08-09 14:51:28,363 - __main__ - INFO - Initializing RAG Assistant UI components...
+2025-08-09 14:51:28,365 - __main__ - INFO - All components initialized successfully
+2025-08-09 14:51:28,365 - __main__ - INFO - Starting RAG Assistant UI application
+2025-08-09 14:51:28,365 - __main__ - INFO - Setting up Streamlit page configuration
+2025-08-09 14:51:28,367 - __main__ - INFO - Authenticated user pk (ID: 1) accessing application
+2025-08-09 14:51:28,367 - __main__ - INFO - Building conversational retrieval chain
+2025-08-09 14:51:28,369 - __main__ - INFO - Conversational chain built successfully
+2025-08-09 14:51:28,378 - __main__ - INFO - Processing query from user 1: what prerequisites do I need ...
+2025-08-09 14:51:29,354 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-09 14:51:29,749 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-09 14:51:32,825 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-09 14:51:32,830 - __main__ - INFO - Generated response in 4.45s with 8 sources
+2025-08-09 14:52:04,045 - __main__ - INFO - Logging initialized
+2025-08-09 14:52:04,046 - __main__ - INFO - Initializing RAG Assistant UI components...
+2025-08-09 14:52:04,046 - __main__ - INFO - All components initialized successfully
+2025-08-09 14:52:04,046 - __main__ - INFO - Starting RAG Assistant UI application
+2025-08-09 14:52:04,046 - __main__ - INFO - User not authenticated, showing login page
+2025-08-09 14:52:45,260 - __main__ - INFO - Logging initialized
+2025-08-09 14:52:45,260 - __main__ - INFO - Initializing RAG Assistant UI components...
+2025-08-09 14:52:45,261 - __main__ - INFO - All components initialized successfully
+2025-08-09 14:52:45,261 - __main__ - INFO - Starting RAG Assistant UI application
+2025-08-09 14:52:45,261 - __main__ - INFO - User not authenticated, showing login page
+2025-08-09 14:52:45,313 - __main__ - INFO - Logging initialized
+2025-08-09 14:52:45,313 - __main__ - INFO - Initializing RAG Assistant UI components...
+2025-08-09 14:52:45,313 - __main__ - INFO - All components initialized successfully
+2025-08-09 14:52:45,314 - __main__ - INFO - Starting RAG Assistant UI application
+2025-08-09 14:52:45,314 - __main__ - INFO - Setting up Streamlit page configuration
+2025-08-09 14:52:45,315 - __main__ - INFO - Authenticated user pk (ID: 1) accessing application
+2025-08-09 14:52:45,315 - __main__ - INFO - Loading chat history for user_id: 1
+2025-08-09 14:52:45,316 - __main__ - INFO - Loaded 12 messages from chat history for user 1
+2025-08-09 14:52:45,316 - __main__ - INFO - Initializing conversation memory for user_id: 1
+2025-08-09 14:52:45,316 - __main__ - INFO - Initialized memory with 12 messages for user 1
+2025-08-09 14:52:45,317 - __main__ - INFO - Building conversational retrieval chain
+2025-08-09 14:52:45,317 - __main__ - INFO - Conversational chain built successfully
+2025-08-09 14:52:52,067 - __main__ - INFO - Logging initialized
+2025-08-09 14:52:52,067 - __main__ - INFO - Initializing RAG Assistant UI components...
+2025-08-09 14:52:52,068 - __main__ - INFO - All components initialized successfully
+2025-08-09 14:52:52,068 - __main__ - INFO - Starting RAG Assistant UI application
+2025-08-09 14:52:52,068 - __main__ - INFO - User not authenticated, showing login page
+2025-08-09 14:52:58,875 - __main__ - INFO - Logging initialized
+2025-08-09 14:52:58,875 - __main__ - INFO - Initializing RAG Assistant UI components...
+2025-08-09 14:52:58,876 - __main__ - INFO - All components initialized successfully
+2025-08-09 14:52:58,876 - __main__ - INFO - Starting RAG Assistant UI application
+2025-08-09 14:52:58,876 - __main__ - INFO - User not authenticated, showing login page
+2025-08-09 14:52:58,930 - __main__ - INFO - Logging initialized
+2025-08-09 14:52:58,931 - __main__ - INFO - Initializing RAG Assistant UI components...
+2025-08-09 14:52:58,931 - __main__ - INFO - All components initialized successfully
+2025-08-09 14:52:58,931 - __main__ - INFO - Starting RAG Assistant UI application
+2025-08-09 14:52:58,931 - __main__ - INFO - Setting up Streamlit page configuration
+2025-08-09 14:52:58,933 - __main__ - INFO - Authenticated user pk (ID: 1) accessing application
+2025-08-09 14:52:58,933 - __main__ - INFO - Loading chat history for user_id: 1
+2025-08-09 14:52:58,934 - __main__ - INFO - Loaded 12 messages from chat history for user 1
+2025-08-09 14:52:58,934 - __main__ - INFO - Initializing conversation memory for user_id: 1
+2025-08-09 14:52:58,934 - __main__ - INFO - Initialized memory with 12 messages for user 1
+2025-08-09 14:52:58,934 - __main__ - INFO - Building conversational retrieval chain
+2025-08-09 14:52:58,935 - __main__ - INFO - Conversational chain built successfully
+2025-08-09 14:53:11,568 - __main__ - INFO - Logging initialized
+2025-08-09 14:53:11,569 - __main__ - INFO - Initializing RAG Assistant UI components...
+2025-08-09 14:53:11,570 - __main__ - INFO - All components initialized successfully
+2025-08-09 14:53:11,570 - __main__ - INFO - Starting RAG Assistant UI application
+2025-08-09 14:53:11,570 - __main__ - INFO - Setting up Streamlit page configuration
+2025-08-09 14:53:11,574 - __main__ - INFO - Authenticated user pk (ID: 1) accessing application
+2025-08-09 14:53:11,576 - __main__ - INFO - Building conversational retrieval chain
+2025-08-09 14:53:11,577 - __main__ - INFO - Conversational chain built successfully
+2025-08-09 14:53:11,586 - __main__ - INFO - Processing query from user 1: Show me the quickstart...
+2025-08-09 14:53:12,464 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-09 14:53:12,849 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-09 14:53:13,691 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-09 14:53:13,714 - __main__ - INFO - Generated response in 2.12s with 8 sources
+2025-08-09 14:53:25,532 - __main__ - INFO - Logging initialized
+2025-08-09 14:53:25,533 - __main__ - INFO - Initializing RAG Assistant UI components...
+2025-08-09 14:53:25,533 - __main__ - INFO - All components initialized successfully
+2025-08-09 14:53:25,534 - __main__ - INFO - Starting RAG Assistant UI application
+2025-08-09 14:53:25,534 - __main__ - INFO - Setting up Streamlit page configuration
+2025-08-09 14:53:25,535 - __main__ - INFO - Authenticated user pk (ID: 1) accessing application
+2025-08-09 14:53:25,536 - __main__ - INFO - Building conversational retrieval chain
+2025-08-09 14:53:25,536 - __main__ - INFO - Conversational chain built successfully
+2025-08-09 14:53:25,544 - __main__ - INFO - Processing query from user 1: Show me the Quick Start guide...
+2025-08-09 14:53:26,322 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-09 14:53:26,673 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-09 14:53:30,774 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-09 14:53:32,432 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-09 14:53:32,434 - __main__ - INFO - Generated response in 6.88s with 8 sources
