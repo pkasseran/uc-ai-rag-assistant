@@ -6,7 +6,7 @@ import re
 import os
 from typing import List, Dict, Any
 import logging
-from urllib.parse import urljoin  # Add this import
+from urllib.parse import urljoin  
 
 class WebDocumentScraper:
     """
