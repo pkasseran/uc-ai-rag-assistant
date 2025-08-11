@@ -8,8 +8,9 @@ from langchain.text_splitter import MarkdownHeaderTextSplitter, RecursiveCharact
 from langchain_openai import OpenAIEmbeddings
 from langchain_community.vectorstores import FAISS
 
-class VectorStoreBuilder:
+class VectorStoreBuilder:    
     def __init__(self, root_dir, document_filename, synonyms_config="synonyms_config.yaml"):
+
         self.root_dir = root_dir
         self.vector_store_path = os.path.join(root_dir, "vector_store", "faiss_index_json_ossuc_ai")
         self.document_dir = os.path.join(root_dir, "documents")
@@ -27,6 +28,18 @@ class VectorStoreBuilder:
         self.openai_api_key = os.getenv("OPENAI_API_KEY")
 
     def inject_synonym_chunks(self, data):
+        """
+        Inject synthetic chunks containing synonym information at the beginning of the data.
+        
+        This method creates synthetic document chunks that explicitly list synonyms for canonical terms,
+        helping improve retrieval by making synonym relationships explicit in the vector store.
+        
+        Args:
+            data (list): List of document dictionaries to augment with synonym chunks
+            
+        Returns:
+            list: The data list with synonym chunks inserted at the beginning
+        """
         for canonical, synonyms in self.synonyms.items():
             chunk = {
                 "source": "synthetic",
@@ -37,6 +50,19 @@ class VectorStoreBuilder:
         return data
 
     def augment_chunks_with_synonyms(self, data):
+        """
+        Augment existing document chunks by appending synonym information to their content.
+        
+        This method scans through each document and if it contains terms that have synonyms,
+        it appends a list of all synonyms (including plurals) to the document content.
+        This helps with retrieval by making related terms more discoverable.
+        
+        Args:
+            data (list): List of document dictionaries to augment with synonym information
+            
+        Returns:
+            list: The data list with documents augmented with synonym information
+        """
         for entry in data:
             title = entry.get("title", "").lower()
             content = entry.get("content", "").lower()
@@ -65,6 +91,18 @@ class VectorStoreBuilder:
         return data
 
     def convert_to_langchain_docs(self, data):
+        """
+        Convert document data from JSON format to LangChain Document objects.
+        
+        This method transforms the document dictionaries into LangChain Document objects
+        with proper page content and metadata structure required for vector store operations.
+        
+        Args:
+            data (list): List of document dictionaries with 'title', 'source', and 'content' keys
+            
+        Returns:
+            list: List of LangChain Document objects with structured content and metadata
+        """
         docs = []
         for entry in data:
             title = entry.get("title", "").strip()
@@ -83,11 +121,36 @@ class VectorStoreBuilder:
         return docs
 
     def build_header_path(self, metadata):
+        """
+        Build a hierarchical path string from markdown header metadata.
+        
+        This method creates a breadcrumb-style path from the document's header hierarchy
+        (h1 > h2 > h3 > h4) to provide context about the document's structure.
+        
+        Args:
+            metadata (dict): Dictionary containing header information with keys like 'h1', 'h2', etc.
+            
+        Returns:
+            str: A string representing the header hierarchy path, e.g., "Main Topic > Subtopic > Detail"
+        """
         return " > ".join(
             [metadata.get(h) for h in ["h1", "h2", "h3", "h4"] if metadata.get(h)]
         )
 
     def split_documents(self, docs):
+        """
+        Split documents into smaller chunks based on markdown headers and enrich with section context.
+        
+        This method uses MarkdownHeaderTextSplitter to break documents into logical sections
+        based on their header structure. Each chunk is enriched with section path information
+        to provide better context during retrieval. e.g. "[Section: Main Topic > Subtopic]".
+        
+        Args:
+            docs (list): List of LangChain Document objects to split
+            
+        Returns:
+            list: List of smaller Document objects with enriched metadata including section paths
+        """
         header_splitter = MarkdownHeaderTextSplitter(
             headers_to_split_on=[("#", "h1"), ("##", "h2"), ("###", "h3"), ("####", "h4")]
         )
@@ -111,6 +174,21 @@ class VectorStoreBuilder:
         return split_docs
 
     def build_vector_store(self, augment_synonyms=True, inject_syn_chunks=False, inject_synth_chunk=False):
+        """
+        Build a complete vector store from document data with various augmentation options.
+        
+        This is the main method that orchestrates the entire vector store building process:
+        loading documents, applying augmentations, splitting into chunks, embedding, and
+        storing in a FAISS vector database.
+        
+        Args:
+            augment_synonyms (bool, optional): Whether to augment documents with synonym information. 
+                                             Defaults to True.
+            inject_syn_chunks (bool, optional): Whether to inject synthetic synonym chunks. 
+                                              Defaults to False.
+            inject_synth_chunk (bool, optional): Whether to inject synthetic integration summary chunk. 
+                                               Defaults to False.
+        """
         # Load data
         file_path = os.path.join(self.document_dir, self.document_filename)
         with open(file_path, "r", encoding="utf-8") as f:
@@ -136,6 +214,7 @@ class VectorStoreBuilder:
         print("✅ FAISS index created and saved locally.")
 
     def test_vector_store(self, query, k=3):
+        
         load_dotenv()
         embeddings = OpenAIEmbeddings(api_key=self.openai_api_key)
         vectorstore = FAISS.load_local(
