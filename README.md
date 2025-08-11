@@ -60,6 +60,17 @@ run_streamlite.bat     # Windows
 
 At the login screen, click on the Register tab and enter your details to register as a user. Then go back to the login screen to login with your username and password.
 
+### Sample questions to ask Unity Catalog AI - Rag assistant:
+
+  - What is Unity Catalog Function?
+  - Can you show me how to define a UC function?
+  - Can you list all the GenAI framework that integrates with Unity Catalog AI?
+  - Give me an overview of the UC client setup - provide code if possible
+  - What is a UC function toolkit and how do we use it in langchain?
+  - Is there any pre-requisites for installation unity catalog AI with langchain
+  - Can you tell me more about Unity Catalog AI and CrewAI integration?
+  - Can you provide me some code example of how CrewAI is used with Unity Catalog AI?
+
 ## 🏗️ Architecture
 
 ### System Components
